@@ -1,0 +1,6 @@
+Copyright (c) 2025 Charan Singh Sanjay
+
+This repository is provided solely for **evaluation purposes** by potential employers.  
+No one is permitted to **use, modify, distribute, or commercialize** the code in this repository **for any purpose**.
+
+By accessing this repository, you **agree** to these terms.

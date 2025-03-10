@@ -1,0 +1,32 @@
+.addressBookContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.addressBookContainer h1 {
+  color: var(--color-secondary);
+}
+
+.addressList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .addressBookContainer {
+    display: flex;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .addressBookContainer h1 {
+    font-size: large;
+  }
+}

@@ -1,0 +1,44 @@
+.formInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.formInputWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.formInputWrapper label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.formInputWrapper input,
+.formInputWrapper textarea {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formInputWrapper input:focus,
+.formInputWrapper textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.formInputWrapper textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.errorMessage {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}

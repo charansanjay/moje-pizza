@@ -1,0 +1,16 @@
+.appLayoutContainer {
+  display: 'flex';
+  flex-direction: 'column';
+  justify-content: 'center';
+  align-items: 'center';
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+.mainContentContainer {
+  display: 'flex';
+  flex-direction: 'column';
+  min-height: 100vh;
+  width: 100%;
+}
+

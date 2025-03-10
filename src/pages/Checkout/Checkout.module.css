@@ -1,0 +1,61 @@
+.checkoutPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
+  color: var(--color-secondary);
+}
+
+.backIcon {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.disabled {
+  display: none;
+  color: var(--color-secondary);
+}
+
+.addressContainer{
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  gap: 3rem;
+}
+
+.addressList {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .checkoutPage {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkoutPage {
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .title h1{
+    font-size: larger;
+  }
+}

@@ -1,0 +1,31 @@
+.title {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title img {
+  width: 3.7rem;
+  height: 3.3rem;
+}
+
+.title h4 {
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+
+  color: var(--color-dark--1);
+}
+
+@media (max-width: 480px) {
+  .title img {
+    width: 3.3rem;
+    height: 2.8rem;
+  }
+
+  .title h4 {
+    display: none;
+    font-size: large;
+  }
+}

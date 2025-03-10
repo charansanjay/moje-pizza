@@ -1,0 +1,30 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0rem;
+  color: var(--color-secondary);
+}
+
+.backIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.disabled {
+  display: none;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 915px) {
+  .title h1 {
+    font-size: larger;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: larger;
+  }
+}

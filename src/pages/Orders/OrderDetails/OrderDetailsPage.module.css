@@ -1,0 +1,29 @@
+.orderDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+.section2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 515px) {
+  .orderDetailsContainer {
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}

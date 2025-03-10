@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  background-color: var(--color-primary);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 3.5rem;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-dark--1);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-dark--1);
+}
+
+/* CSS Modules feature */
+.header a:global(.active) {
+  color: var(--color-primary);
+  background-color: var(--color-dark--1);
+}

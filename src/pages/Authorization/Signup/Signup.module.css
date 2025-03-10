@@ -1,0 +1,76 @@
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  /* background-color: aqua; */
+}
+
+.signupFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: orange; */
+  padding: 1rem;
+  width: 30%;
+}
+
+.signupHeading {
+  color: var(--color-secondary);
+  font-size: x-large;
+  text-align: center;
+}
+
+.signupMessage {
+  color: var(--color-light--0);
+  font-size: medium;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-dark--3);
+  font-weight: 600;
+  width: 60%;
+}
+
+.orDividerLine {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-grey--2);
+}
+
+.orDividerText {
+  background-color: var(--color-light--3);
+  padding: 0.5rem;
+}
+
+@media (max-width: 1300px) {
+  .signupFormContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .signupContainer {
+    width: 100%;
+  }
+
+  .signupFormContainer {
+    width: 95%;
+    padding: 1rem 0;
+  }
+
+  .signupMessage {
+    font-size: medium;
+    text-align: center;
+
+  }
+
+  .orDivider {
+    width: 80%;
+  }
+}

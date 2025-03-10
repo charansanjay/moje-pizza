@@ -1,0 +1,94 @@
+/* PhoneInput.module.css */
+.phoneContainer {
+  position: relative;
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.countrySelector {
+  position: relative;
+}
+
+.countryTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.countryDropdown {
+  width: 300px;
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.countryList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.countryItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.countryItem:hover,
+.highlighted {
+  background-color: #f5f5f5;
+}
+
+.countryName {
+  flex: 1;
+  text-align: left;
+}
+
+.dialCode {
+  color: #666;
+}
+
+.phoneInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.phoneInput.error {
+  border-color: #ff4444;
+}
+
+.errorMessage {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}

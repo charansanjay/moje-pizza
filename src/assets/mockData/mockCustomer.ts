@@ -1,0 +1,43 @@
+import { CustomerType } from '../../services/apiCustomer';
+
+export const mockCustomer: CustomerType = {
+  id: '123',
+  firstName: 'firstName',
+  lastName: 'lastName',
+  emailAddress: 'charan@example.com',
+  role: 'customer',
+  uuid: '123',
+  metaData: {
+    email: 'charan@example.com',
+    emailAddress: 'charan@example.com',
+    email_verified: true,
+    firstName: 'firstName',
+    lastName: 'lastName',
+    phone_verified: true,
+    role: 'customer',
+    sub: 'sub123',
+  },
+  addresses: [],
+  cart_id: '1',
+  defaultBilling: '1',
+  defaultShipping: '1',
+  avatar: 'avatar.jpg',
+  customerCart: {
+    id: '44',
+    cartSummary: {
+      vat: 0,
+      subtotal: 0,
+      grandTotal: 0,
+      deliveryCost: 0,
+      discountAmount: 0,
+      vatRatePercentage: 0,
+      discountPercentage: 0,
+    },
+    isActive: true,
+    itemsQuantity: 0,
+    customer_id: '123',
+    items: [],
+    itemsCount: 0,
+    currency: 'Kč‎',
+  },
+};

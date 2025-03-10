@@ -1,0 +1,25 @@
+.availabilityLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+
+  border-radius: 4px;
+  border: 1px solid var(--color-grey--1);
+  background-color: var(--color-light--3);
+  cursor: pointer;
+}
+
+.availabilityLabel input {
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 480px) {
+  .availabilityLabel {
+    width: auto;
+    font-size: small;
+    padding: 0.7rem;
+  }
+}

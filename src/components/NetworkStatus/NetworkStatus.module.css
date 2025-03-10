@@ -1,0 +1,18 @@
+/* NetworkStatus.module.css */
+.offlineBanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-secondary);
+  color: var(--color-light--3);
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}

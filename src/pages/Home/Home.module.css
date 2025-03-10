@@ -1,0 +1,44 @@
+.homeContainer {
+  background-image: url(../../assets//images/pizza-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /*   background-color: aqua; */
+}
+
+.homeBanner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.homeBannerContent {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.homeBannerContent h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--color-light--3);
+}
+
+.homeBannerContent p {
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--color-light--3);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  .homeBannerContent h1 {
+    font-size: x-large;
+  }
+
+  .homeBannerContent p {
+    font-size: large;
+  }
+}

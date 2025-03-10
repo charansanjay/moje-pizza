@@ -1,0 +1,82 @@
+.loginContainer {
+  /* min-height: calc(100vh - 10rem); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  /* background-color: aqua; */
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  width: 30%;
+}
+
+.loginHeading {
+  color: var(--color-secondary);
+  font-size: x-large;
+  text-align: center;
+}
+
+.loginMessage {
+  color: var(--color-light--0);
+  font-size: medium;
+}
+
+.forgotPasswordLink {
+  color: var(--color-secondary);
+  font-size: medium;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.forgotPasswordLink:hover {
+  font-weight: 500;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 60%;
+  color: var(--color-dark--3);
+  font-weight: 600;
+}
+
+.orDividerLine {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-grey--2);
+}
+
+.orDividerText {
+  background-color: var(--color-light--3);
+  padding: 0.5rem;
+}
+
+@media (max-width: 1300px) {
+  .loginFormContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    width: 100%;
+  }
+
+  .loginFormContainer {
+    width: 95%;
+    padding: 1rem 0;
+  }
+
+  .orDivider {
+    width: 80%;
+  }
+}
