@@ -1,0 +1,10 @@
+.select {
+  width: auto;
+  font-size: medium;
+}
+
+@media (max-width: 480px) {
+  .select {
+    font-size: small;
+  }
+}

@@ -1,0 +1,7 @@
+Copyright (c) 2025 Charan Singh Sanjay
+
+This codebase is intended exclusively for portfolio and evaluation purposes by potential employers.
+
+use, modify, distribute, or commercialize the code in this repository for any purpose is strictly prohibited.  
+
+By accessing this repository, you agree to these terms.

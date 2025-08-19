@@ -1,0 +1,15 @@
+.optionContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select {
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .select {
+    font-size: small;
+  }
+}

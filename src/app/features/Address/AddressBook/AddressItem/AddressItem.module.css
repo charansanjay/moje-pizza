@@ -1,0 +1,66 @@
+.addressCard {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 1rem;
+
+  width: 350px;
+  height: fit-content;
+  padding: 0.8rem;
+
+  border: 1px solid var(--color-grey--1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+hr {
+  border: 0.05px solid var(--color-light--0);
+  margin: 0;
+}
+
+.actionButtonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* background-color: aqua; */
+}
+
+.actionButtons{
+  display: flex;
+  gap: 1rem;
+}
+
+.deleteIcon, .editIcon {
+  color: var(--color-secondary);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.editIcon {
+  color: var(--color-dark--3);
+}
+
+.setDefaultText {
+  color: var(--color-dark--2);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: small;
+}
+
+.setDefaultText:hover {
+  color: var(--color-success);
+}
+
+.default {
+  font-size: small;
+  color: var(--color-success);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .addressCard {
+    width: 100%;
+  }
+}

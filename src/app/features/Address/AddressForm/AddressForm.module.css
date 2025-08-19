@@ -1,0 +1,112 @@
+.addressForm {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  /* background-color: orange; */
+}
+
+.addressForm h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--color-dark--2);
+}
+
+.formContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.nameGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: pink; */
+}
+
+.addressGroup {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightgreen; */
+}
+
+.cityPincodeGroup {
+  display: flex;
+  gap: 1rem;
+  /* background-color: lightblue; */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  /* background-color: aqua; */
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.formAddressDeclaration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.formAddressDeclaration input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+.errorMessage {
+  font-size: 0.875rem;
+  margin-top: 4px;
+
+  color: #ff4444;
+}
+
+/* Responsive Styles */
+@media (min-width: 851px) {
+  .addressForm {
+    padding: 30px;
+  }
+
+  .formGroup {
+    margin-bottom: 20px;
+  }
+
+  .continueButton {
+    width: auto;
+    float: right;
+  }
+}
+
+@media (max-width: 850px) {
+  .addressForm {
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .addressForm h2 {
+    font-size: 1.25rem;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .cityPincodeGroup {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}

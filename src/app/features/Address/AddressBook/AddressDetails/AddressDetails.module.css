@@ -1,0 +1,27 @@
+.addressDetails {
+  display: block;
+  text-align: left;
+  line-height: 1.5rem;
+  flex: 1;
+  
+}
+
+.addressDetails p {
+  margin: 0;
+}
+
+.address {
+  font-size: small;
+  color: var(--color-dark--2);
+}
+
+.name {
+  font-size: medium;
+  color: var(--color-dark--2);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.phone {
+  font-size: small;
+}

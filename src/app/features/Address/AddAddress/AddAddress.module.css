@@ -1,0 +1,25 @@
+.addAddressContainer {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.addAddressContainer h1 {
+  color: var(--color-secondary);
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .addAddressContainer {
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .addAddressContainer h1 {
+    font-size: larger;
+  }
+}

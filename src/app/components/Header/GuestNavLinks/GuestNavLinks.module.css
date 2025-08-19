@@ -1,0 +1,14 @@
+.link {
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: medium;
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--color-dark--1);
+}
+
+.link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-dark--1);
+  transition: 0.4s ease;
+}

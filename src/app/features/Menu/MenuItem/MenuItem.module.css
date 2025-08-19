@@ -1,0 +1,96 @@
+.menuItem {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  /* background-color: orange; */
+  width: 450px;
+  gap: 1rem;
+}
+
+.menuItemDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.menuItemImageContainer {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menuItem img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menuItemContent {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0rem;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+  font-size: small;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--color-secondary);
+  font-size: medium;
+}
+
+.addToCartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.3rem 0.5rem;
+  font-size: small;
+  font-weight: bold;
+  color: var(--color-dark--1);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.addToCartButton:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-light--3);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .menuItem {
+    width: 100%;
+    gap: 0.7rem;
+  }
+
+  .menuItem:hover {
+    transform: none;
+  }
+
+  .menuItem img {
+    border-radius: 5px;
+  }
+
+  .menuItemContent {
+    padding: 0rem 0rem;
+    gap: 0.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

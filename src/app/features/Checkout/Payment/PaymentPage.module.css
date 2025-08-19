@@ -1,0 +1,49 @@
+/* PaymentPage.module.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-dark--1);
+  margin-bottom: 2rem;
+}
+
+.paymentMethods {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.payButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-dark--0);
+  border: none;
+  border-radius: 8px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.payButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: var(--color-secondary-1);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+}
