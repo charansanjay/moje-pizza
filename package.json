@@ -6,6 +6,7 @@
   "author": {
     "name": "Charan Singh Sanjay"
   },
+  "sideEffects": ["**/*.css"],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
