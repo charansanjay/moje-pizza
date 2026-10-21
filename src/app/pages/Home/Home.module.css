@@ -1,17 +1,28 @@
 .homeContainer {
-  background-image: url(../../../assets//images/pizza-banner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative; /* NEW: the img positions itself inside this box */
+  overflow: hidden; /* NEW: nothing spills outside */
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  /*   background-color: aqua; */
+  height: 100vh; /* fallback for old browsers… */
+  height: 100dvh; /* …modern ones use the dynamic viewport height */
+  background-color: #7e5023; /* NEW: the image's average colour, shown while it loads */
+  /* REMOVED: background-image, background-size, background-repeat */
+}
+
+.heroImage {
+  /* NEW */
+  position: absolute; /* taken out of the flow, so it sits behind the text */
+  inset: 0; /* top/right/bottom/left: 0, i.e. fill the container */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* like background-size: cover, for an <img> */
 }
 
 .homeBanner {
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 1; /* NEW: keep the text explicitly above the image */
 }
 
 .homeBannerContent {

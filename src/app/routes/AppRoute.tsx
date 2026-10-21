@@ -11,13 +11,10 @@ import {
   ScrollToTopButton,
   ScrollToTop,
 } from '../components';
+import { Home } from '../pages/Home/Home';
+import { AppLayout } from '../layouts/AppLayout';
 
 // Lazy-loaded components
-const Home = lazy(() =>
-  import('../pages/Home/Home').then((module) => ({
-    default: module.Home,
-  }))
-);
 const Menu = lazy(() =>
   import('../features/Menu/Menu').then((module) => ({
     default: module.Menu,
@@ -31,11 +28,6 @@ const Signin = lazy(() =>
 const Signup = lazy(() =>
   import('../features/Authorization').then((module) => ({
     default: module.Signup,
-  }))
-);
-const AppLayout = lazy(() =>
-  import('../layouts/AppLayout').then((module) => ({
-    default: module.AppLayout,
   }))
 );
 const NotFound = lazy(() =>
